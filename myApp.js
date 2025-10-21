@@ -6,7 +6,7 @@ console.log("Hello, World!");
 });*/
 
 app.get("/", function (req, res){
-    res.senFile(__dirname + "/views/index.html");
+    res.sendFile(__dirname + "/views/index.html");
 });
 
 
