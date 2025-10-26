@@ -48,10 +48,13 @@ app.route("/name").get (function (req, res){
     let lastName = req.query.last;
     let fullName = `${firstName} ${lastName}`;
     res.json({name: fullName});
-});
-
-
-
+ })
+ .post (function (req, res){
+    let firstName = req.body.first;
+    let lastName = req.body.last;
+    let fullName = `${firstName} ${lastName}`;
+    res.json({name: fullName});
+}); 
 
 
 
